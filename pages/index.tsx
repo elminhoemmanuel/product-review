@@ -1,12 +1,11 @@
-import { useAppDispatch, useAppSelector } from 'redux/hooks'
-import { increment, decrement } from 'redux/slices/counter';
+import CommentsList from '@/components/CommentsList';
 
 export default function Home() {
-    const dispatch = useAppDispatch();
-    const { value } = useAppSelector( state => state.counter );
     return (
-        <div >
-            Product Review App
+        <div className='2xl:max-w-screen-2xl 2xl:mx-auto w-full md:w-4/5 mx-auto px-5 py-12'>
+            <h1 className='text-2xl text-ckdarkblue font-bold mb-10'>Product Review App</h1>
+
+            <CommentsList />
         </div>
     )
 }
