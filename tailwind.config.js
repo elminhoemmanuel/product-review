@@ -8,7 +8,8 @@ module.exports = {
             cklightblue:"#6BE0E6",
             ckyellow:"#FEFFD8",
             ckdarkblue:"#0B1242",
-            ckdarkbluelighter:"#16365E"
+            ckdarkbluelighter:"#16365E",
+            ckbtn:"#2bd4db"
         }
       },
   

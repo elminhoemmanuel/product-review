@@ -13,3 +13,10 @@ body {
 * {
   box-sizing: border-box;
 }
+
+// Global styles for Rater component
+  .react-rater-star:hover, 
+  .react-rater-star.will-be-active, 
+  .react-rater-star.is-active{
+    color: #ffc400e7 !important;
+  }

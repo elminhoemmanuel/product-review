@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
-import { addComment } from 'redux/slices/comments';
 import CommentCard from '../CommentCard';
+import Header from '../Common/Header';
 
 const CommentsList = () => {
 
     const dispatch = useAppDispatch();
     const { comments } = useAppSelector(state => state.comments);
     const dummy = {name:"jim", email:"jim@gmail.com", rating:3, comment:"Make sense"}
+
+    useEffect(() => {
+      
+    }, [comments])
+    
     return (
-        <div>
-            <h1 className='text-lg text-ckdarkblue font-bold mb-4'>Latest Comments</h1>
+        <div className='mt-16 mb-8'>
+            <Header text="Latest comments" size="sm" />
 
             {
                 comments.map(item => (
