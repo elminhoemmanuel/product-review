@@ -4,7 +4,7 @@ import { Comment, RatingsScore } from 'utils/types/comments';
 import dynamic from 'next/dynamic'
 import Header from '../Common/Header';
 
-const Chart = dynamic(() => import('react-apexcharts'))
+const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const CommentGraph = () => {
 
