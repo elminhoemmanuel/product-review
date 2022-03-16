@@ -14,18 +14,17 @@ import { PersistGate } from 'redux-persist/integration/react'
  
 
 // ... import other reducers (slice) here
-import { counterReducerName } from '../slices/counter';
-import counterReducer from '../slices/counter';
+import { commentsReducer, commentsReducerName } from '../slices/comments';
  
 const persistConfig = {
  key: 'root',
  version: 1,
  storage,
- whitelist: [counterReducerName],
+ whitelist: [commentsReducerName],
 }
  
 const persistedReducer = persistReducer(persistConfig, combineReducers({
-    counter:counterReducer
+    comments: commentsReducer
 }));
  
 export const store = configureStore({
