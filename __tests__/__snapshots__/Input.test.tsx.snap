@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`On render, check that Input field is present 1`] = `
+<div
+  class=""
+>
+  <input
+    class="text-sm w-full block p-3 text-ckdarkblue bg-transparent border border-gray-200 hover:border-cklightblue rounded-md focus:outline-none placeholder-ckdarkblue"
+    type="text"
+  />
+</div>
+`;

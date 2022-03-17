@@ -14,8 +14,8 @@ const CommentCard = ({ comment }: CommentCardProps) => {
         <div className='text-sm px-5 py-3 mb-3 rounded-md border border-ckdarkblue'>
             <div className='pb-3 flex items-center justify-between'>
                 <div className=''>
-                    <h3 className='text-lg text-ckdarkblue font-bold mb-2'>{comment?.name}</h3>
-                    <p className=''>{comment?.email}</p>
+                    <h3 data-testid="comment-name" className='text-lg text-ckdarkblue font-bold mb-2'>{comment?.name}</h3>
+                    <p data-testid="comment-email" className=''>{comment?.email}</p>
                 </div>
 
                 <div>
@@ -24,7 +24,7 @@ const CommentCard = ({ comment }: CommentCardProps) => {
             </div>
 
             <div className='py-2 text-ckdarkblue'>
-                <p>{comment?.comment}</p>
+                <p data-testid="comment-body" >{comment?.comment}</p>
             </div>
         </div>
     )

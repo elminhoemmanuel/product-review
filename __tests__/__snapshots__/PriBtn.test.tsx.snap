@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`On render, check that Input field is present 1`] = `
+<button
+  class="text-sm block w-full px-5 py-3 text-ckdarkblue font-bold bg-ckbtn hover:bg-cklightblue rounded-md"
+>
+  Test Button
+</button>
+`;
+
+exports[`On render, check that Primary button is rendered correctly 1`] = `
+<button
+  class="text-sm block w-full px-5 py-3 text-ckdarkblue font-bold bg-ckbtn hover:bg-cklightblue rounded-md"
+>
+  Test Button
+</button>
+`;

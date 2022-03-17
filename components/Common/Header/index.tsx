@@ -19,7 +19,7 @@ const Header = ({ text, size }: HeaderProps) => {
     }
 
     return (
-        <h1 className={`${getSizeText(size)} ${defaultStyle}`} >
+        <h1 data-testid="header" className={`${getSizeText(size)} ${defaultStyle}`} >
             {text}
         </h1>
     )

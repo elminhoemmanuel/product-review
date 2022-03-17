@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react'
-import { useAppDispatch, useAppSelector } from 'redux/hooks'
+import { useAppSelector } from 'redux/hooks'
 import CommentCard from '../CommentCard';
 import Header from '../Common/Header';
 
 const CommentsList = () => {
 
-    const dispatch = useAppDispatch();
     const { comments } = useAppSelector(state => state.comments);
     const dummy = {name:"jim", email:"jim@gmail.com", rating:3, comment:"Make sense"}
 
