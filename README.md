@@ -30,6 +30,7 @@ Some further improvements which are still possible on this project include;
 - Writing some more test cases even though I have been able to write quite a good number of unit tests already I would have loved to add integration tests and other improved tests.
 - With more time I would have loved to  improve the styling and desgin of the app more than what it currently is.
 - With more time I would want to add a more stricter validation library to handle validation of the input fields in the comment form in a more stricter way such as using Yup and react-hook-form or formik which I have used before.
+- With more time I would have also loved to setup a proper CI/CD pipeline to make the development process easier, faster and more efficent.
 
 <!-- Bult with -->
 ### Built With
